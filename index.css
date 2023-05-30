@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+font-size: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+u1{
+    list-style: none;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:darkred;
+
+
+}
+
+button:hover{
+    background-color: rgb(70, 8, 8);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: darkred;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:darkred;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: 25px;
+    text-align: center;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a::hover{
+    color:darkred;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:rgb(255, 255, 255);
+    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#quienes-somos .container{
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+#scrum-team{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+}
+#scrum-team .container{
+    padding: 100px 12px;
+}
+
+#scrum-team h2{
+    margin-top: 0;
+}
+
+#scrum-team p{
+    display: none;
+
+}
+
+#scrum-team .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.carta:nth-child(2){
+    /*background-color: darkmagenta;*/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/po.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/dv1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url("images/dv2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+    /*justify-content: center;*/
+   /* align-items: center;*/
+   /*margin: 0px 80px;*/
+}
+#caracteristicas .containerButton{
+    /*text-align: center;*/
+    padding: 50px 150px;
+
+}
+#caracteristicas button{
+   
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color:rgb(114, 184, 76);
+    background-size: 50px 30px;
+    
+
+
+
+}
+
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+@media (min-width: 720px){
+
+    header{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #quienes-somos .texto{
+        max-width: 600px;
+        padding: 0px 30px;
+        width: 50%;
+        text-align: initial;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+         ), url("images/nobad.jpg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+        height: 500px;
+        width: 550px; 
+    }
+
+    #scrum-team .team{
+        display: flex;
+        justify-items: center;
+    }
+
+    #scrum-team p{
+        display: block;
+    }
+
+    #scrum-team h3{
+        margin-top: 0;
+
+    }
+
+    #caracteristicas{
+        background-image: url("images/decochin.jpg");
+        background-repeat: no-repeat;
+        background-size: 350px 500px;
+        background-position: calc(100vw - 500px) 120px;
+
+    }
+    
+    #caracteristicas .container{
+        text-align: initial;
+
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+
+@media (min-width: 1100px){
+    #caracteristicas{
+        background-position: calc(100vw - 500px);
+    }
+}
